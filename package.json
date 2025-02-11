@@ -1,6 +1,7 @@
 {
-  "name": "fullstack-project",
+  "name": "canban_board",
   "version": "1.0.0",
+  "type": "module",
   "private": true,
   "workspaces": [
     "client",
@@ -8,7 +9,8 @@
   ],
   "scripts": {
     "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
-    "build": "cd client && npm install --include=dev && npm run build"
+    "build": "npm install && cd server && npm install && npm run build && cd ../client && npm install --include=dev && npm run build",
+    "start": "cd server && npm start"
   },
   "devDependencies": {
     "concurrently": "^8.2.2"
