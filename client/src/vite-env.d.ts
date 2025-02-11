@@ -21,6 +21,6 @@ declare module '*.svg' {
 }
 
 declare module 'react-dom/client' {
-  import * as ReactDOM from 'react-dom'
-  export = ReactDOM
+  import { Root } from 'react-dom/client'
+  export function createRoot(container: Element | DocumentFragment): Root
 }
