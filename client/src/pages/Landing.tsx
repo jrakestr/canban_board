@@ -1,4 +1,3 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/canban250.png';
 import kanbanImage from '../assets/kanban.png';

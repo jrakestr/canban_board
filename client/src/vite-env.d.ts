@@ -19,3 +19,8 @@ declare module '*.svg' {
   const value: string
   export default value
 }
+
+declare module 'react-dom/client' {
+  import * as ReactDOM from 'react-dom'
+  export = ReactDOM
+}
