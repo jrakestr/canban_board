@@ -6,6 +6,9 @@ export interface AuthRequest extends Request {
     id: number;
     username: string;
   };
+  body: any;
+  params: any;
+  headers: any;
 }
 
 const debug = {
